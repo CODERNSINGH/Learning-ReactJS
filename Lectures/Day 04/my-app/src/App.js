@@ -2,6 +2,7 @@
 import './App.css';
 
 let name = "Narendra singh "
+let age = "<b>19</b>"
 function App() {
   return (
    <div className="container">
@@ -13,6 +14,7 @@ function App() {
 
     </ul>
     <h2>Hello mr {name}</h2>
+    <h3>my age is {age}</h3>
    </div>
   );
 }

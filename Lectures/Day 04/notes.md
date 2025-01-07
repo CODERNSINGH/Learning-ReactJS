@@ -29,4 +29,5 @@
 
 * i cannot directly add h1 in app.js instat we can we do some thing 
 
-Most of time we remove all things jsx
+Most of time we remove all things jsx and now you can it normally
+
