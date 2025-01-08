@@ -1,14 +1,12 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PropTypes from "prop-types";
 
-// let name = "Narendra singh "
-// let age = "<b>19</b>"
-function App() {
-  return (
-   <>
+export default function Navbar(props){
+    return(
+        
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">Textutils</a>
+        <a className="navbar-brand" href="/">{props.title}</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -18,7 +16,7 @@ function App() {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">About</a>
+              <a className="nav-link" href="/">{props.about}</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,36 +37,24 @@ function App() {
         </div>
       </div>
     </nav>
+    )
+}
+// Navbar.propTypes = {
+//     title: PropTypes.string, // it means in app.js title should be in string if it send in number throws an error
+//     about: PropTypes.string
+// }
 
-    <div className="card">
-  <img src="..." className="card-img-top" alt="..."/>
+// Navbar.defaultProps = {
+//     title: 'set title here',
+//     about: 'nothing'
+// };
 
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="/" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<div className="card" aria-hidden="true">
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title placeholder-glow">
-      <span className="placeholder col-6"></span>
-    </h5>
-    <p className="card-text placeholder-glow">
-      <span className="placeholder col-7"></span>
-      <span className="placeholder col-4"></span>
-      <span className="placeholder col-4"></span>
-      <span className="placeholder col-6"></span>
-      <span className="placeholder col-8"></span>
-    </p>
-    <a className="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-  </div>
-</div>
-   
-   </>
-  );
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired,
+    aboutText: PropTypes.string.isRequired
 }
 
-export default App;
+Navbar.defaultProps = {
+    title: 'Set title here',
+    aboutText: 'About'
+  };
