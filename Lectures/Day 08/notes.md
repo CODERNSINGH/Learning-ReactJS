@@ -5,3 +5,6 @@
 
 ## what is Hooks 
 * in short hooks let use use class property without actully using them
+
+
+Day 08
