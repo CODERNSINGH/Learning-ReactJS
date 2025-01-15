@@ -15,9 +15,9 @@ export default function About() {
         backgroundColor: 'white'
     })
 
-    const handleNothing = () =>{
-        console.log("jai Mata di")
-    }
+    // const handleNothing = () =>{
+    //     console.log("jai Mata di")
+    // }
 
     const toggleStyle = () => {
         if (Darkmode.color === 'white') {
