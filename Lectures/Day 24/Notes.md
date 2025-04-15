@@ -1,7 +1,8 @@
 # Class based Components
-API - Handling 
-API Key - b58d7fe22dc2432d9e8be409f2b72912
+ * till now we only understand how function work in react js now let's deep dive in class based components 
+  
 
-```let {title, description} = this.props;```
+  here props state and other things are little bit different 
 
-* here we are pulling description and title from this.props
+
+* Reder method is life cyle method wehn react load it alos load some components in short loading html 
