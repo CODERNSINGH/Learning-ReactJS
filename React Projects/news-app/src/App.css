@@ -1,1 +1,166 @@
-@import "tailwindcss";
+/* App.css - Main application styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #e7e9ea;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  .main-section {
+    flex: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* Twitter-inspired colors */
+  .primary-blue {
+    color: #1d9bf0;
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(to right, #1d9bf0, #1a8cd8);
+  }
+  
+  .bg-dark {
+    background-color: #000;
+  }
+  
+  .bg-darker {
+    background-color: #16181c;
+  }
+  
+  .border-color {
+    border-color: #2f3336;
+  }
+  
+  .text-muted {
+    color: #71767b;
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none;
+  }
+  
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Dark mode specific colors */
+  :root {
+    --text-primary: #e7e9ea;
+    --text-secondary: #71767b;
+    --bg-primary: #000;
+    --bg-secondary: #16181c;
+    --border-color: #2f3336;
+    --accent-blue: #1d9bf0;
+    --accent-hover: #1a8cd8;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  @media print {
+    body {
+      margin: 0 !important;
+    }
+  }
+  
+  .main-container {
+    --ckeditor5-preview-sidebar-width: 270px;
+    font-family: 'Lato';
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-container .presence {
+    margin-bottom: 8px;
+  }
+  
+  .ck-content {
+    font-family: 'Lato';
+    line-height: 1.6;
+    word-break: break-word;
+  }
+  
+  .editor-container__editor-wrapper {
+    display: flex;
+    width: fit-content;
+  }
+  
+  .editor-container_include-annotations .editor-container__editor .ck.ck-editor__editable {
+    margin-right: 0;
+  }
+  
+  .editor-container_include-block-toolbar {
+    margin-left: 42px;
+  }
+  
+  .editor-container_balloon-editor .editor-container__editor {
+    min-width: 795px;
+    max-width: 795px;
+  }
+  
+  .editor-container__sidebar {
+    min-width: var(--ckeditor5-preview-sidebar-width);
+    max-width: var(--ckeditor5-preview-sidebar-width);
+    margin-top: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .revision-history {
+    display: none;
+  }
+  
+  .revision-history__wrapper {
+    display: flex;
+  }
+  
+  .revision-history__wrapper .ck.ck-editor {
+    margin: 0;
+    width: 795px;
+  }
+  
+  .revision-history__wrapper .revision-history__sidebar {
+    border: 1px solid var(--ck-color-base-border);
+    border-left: 0;
+    width: var(--ckeditor5-preview-sidebar-width);
+    min-height: 100%;
+  }
+  
+  .revision-history__wrapper .revision-history__sidebar .ck-revision-history-sidebar {
+    height: 100%;
+  }
+  

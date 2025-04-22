@@ -1,0 +1,47 @@
+/* Card.css */
+.card-component {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-component:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    height: 250px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+  
+  .read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    width: fit-content;
+  }
+  
+  .read-more-btn:hover {
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 768px) {
+    .card-image {
+      height: 200px;
+    }
+  }
